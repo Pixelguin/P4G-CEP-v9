@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<Metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <name>Config Clarity</name>
+  <id>pixelguin.configclarity</id>
+  <author>Pixelguin</author>
+  <version>1.4.2</version>
+  <link>https://gamebanana.com/mods/34007</link>
+  <description>Overhauls almost every setting name and explanation in the Config menu.
+
+Changes range from fixing Engrish text to explaining the performance impact of graphics settings.</description>
+  <skippedVersion>all</skippedVersion>
+</Metadata>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<Metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <name>Dungeon Save Points - Classic</name>
+  <id>animatedswine37.dungeonsavepointsclassic</id>
+  <author>AnimatedSwine37</author>
+  <version>1.0</version>
+  <link>https://gamebanana.com/mods/356715</link>
+  <description>Restores the save points on the final floor of dungeons that were removed in P4 Golden.
+
+You can also return to the TV World entrance at these save points, even without a Goho-M.</description>
+  <skippedVersion>all</skippedVersion>
+</Metadata>

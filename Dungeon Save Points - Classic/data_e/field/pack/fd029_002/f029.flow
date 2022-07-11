@@ -1,0 +1,64 @@
+import("f029.bf");
+import("f029.msg");
+// import("../save.bf.flow"); // Uncomment this to replace the save point with one that doesn't let you return to the entrance
+
+void f029_002_init_hook()
+{
+    int var0;
+    int var1;
+    
+    if ( FLD_FUNCTION_0000() == 2 )
+    {
+        // Spawn save butterfly
+        var0 = LOAD_FIELD_OBJECT( -1, 102 );
+        var1 = FLD_FUNCTION_000F( var0 );
+        FLD_FUNCTION_000C( var1, 1 );
+        FLD_FUNCTION_0007( var1, 1 );
+        
+        if ( BIT_CHK( 23 ) == 0 )
+        {
+            BIT_ON( 3872 );
+        }
+        else 
+        {
+            BIT_OFF( 3872 );
+            FLD_FUNCTION_0010( 10243, 0 );
+        }
+
+    }
+
+}
+
+void save_point_hook()
+{
+    int var4;
+    OPEN_MSG_WIN();
+    MSG( SAVE_OK );
+    SEL_CHK_PAD( 14, 2 );
+    var4 = SEL( SAVE_SEL );
+    CLOSE_MSG_WIN();
+    
+    if ( var4 == 0 )
+    {
+        NS_SAVE();
+    }
+    else if ( var4 == 1 )
+    {
+        // Check if we can't leave
+        if ( ( BIT_CHK( 3164 ) == 1 ) && ( BIT_CHK( 3165 ) == 0 ) )
+        {
+            WAIT( 10 );
+            PLAY_SOUNDEFFECT( 241 );
+            WAIT( 10 );
+            OPEN_MSG_WIN();
+            MSG( ESCAPE_BAN );
+            CLOSE_MSG_WIN();
+            return;
+        }
+
+        FADE( 1, 10 );
+        FADE_SYNC();
+        CALL_DUNGEON( 120, 1 );
+    }
+
+}
