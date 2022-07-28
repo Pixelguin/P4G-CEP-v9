@@ -402,6 +402,14 @@
       <link>https://gamebanana.com/mods/322914</link>
     </Package>
     <Package>
+      <name>Hidden Field Names</name>
+      <path>Hidden Field Names</path>
+      <enabled>true</enabled>
+      <id>animatedswine37.hidefieldname</id>
+      <hidden>false</hidden>
+      <link>https://gamebanana.com/mods/389830</link>
+    </Package>
+    <Package>
       <name>Ultimate Persona Compendium Registration</name>
       <path>Ultimate Persona Compendium Registration</path>
       <enabled>true</enabled>
